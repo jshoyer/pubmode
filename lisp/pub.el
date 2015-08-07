@@ -195,6 +195,8 @@ Lines longer than that value are broken"
 
 (define-key pub-keymap [(down)] 'pub-next-entry)
 (define-key pub-keymap [(up)] 'pub-prev-entry)
+(define-key pub-keymap "p" 'pub-prev-entry)
+(define-key pub-keymap "n" 'pub-next-entry)
 
 (define-key pub-keymap "q" 'pub-close-selection-buffer)
 
@@ -209,7 +211,7 @@ Lines longer than that value are broken"
 
 (define-key pub-keymap "\r" 'pub-action)
 
-(define-key pub-keymap "p" 'pub-med)
+(define-key pub-keymap "s" 'pub-med) ; search
 
 (define-key pub-keymap "a" 'pub-select-all)
 (define-key pub-keymap "u" 'pub-deselect-all)
