@@ -104,7 +104,7 @@
 	(progn
 	  (setq doi (pub-format-doi data))
 	  (insert doi)
-	  (insert "\n\n")
+	  (insert "\n")
 	  )
       )
     (if (= detail 1)
@@ -127,7 +127,7 @@
           
           (insert firstAuthor)
           (insert citation)
-          (insert "\n\n")
+          (insert "\n")
           
           )
       )
