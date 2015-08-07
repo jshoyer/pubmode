@@ -220,6 +220,7 @@ Lines longer than that value are broken"
 
 (define-key pub-keymap "w" 'pub-copy-text)
 
+(define-key pub-keymap "0" 'pub-detail-briefer)
 (define-key pub-keymap "1" 'pub-detail-brief)
 (define-key pub-keymap "2" 'pub-detail-summary)
 (define-key pub-keymap "3" 'pub-detail-abstract)

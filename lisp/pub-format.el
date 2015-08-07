@@ -34,6 +34,7 @@
          (pages (gethash "pages" data))
          (abstract (gethash "abstract" data))
          (PMID (gethash "PMID" data))
+         (doi (gethash "doi" data))
          (selected (gethash "selected" data))
          (indatabase (gethash "indatabase" data))         
          (detail (gethash "detail" data))
@@ -99,6 +100,13 @@
       )
    
 
+    (if (= detail 0)
+	(progn
+	  (setq doi (pub-format-doi data))
+	  (insert doi)
+	  (insert "\n\n")
+	  )
+      )
     (if (= detail 1)
         (progn 
          
@@ -130,6 +138,7 @@
           (setq authorString (concat (pub-break-line authorString pub-line-width indent t) "\n"))
           (setq title (concat (pub-break-line title pub-line-width indent) "\n"))
           (setq citation (concat (pub-break-line (pub-format-citation data 1) pub-line-width indent) "\n"))
+          (setq doiuri (concat (pub-break-line (pub-format-doi data) pub-line-width indent) "\n"))
 
           (if (not plain)
               (progn
@@ -142,6 +151,7 @@
           (insert authorString)
           (insert title)
           (insert citation)
+	  (insert doiuri)
           (insert "\n")
              
           ))
@@ -159,6 +169,17 @@
           (insert "\n\n")
           )
       )
+    )
+  )
+
+
+(defun pub-format-doi (data) ""
+  (let* ((doi (gethash "doi" data)))
+
+    (if doi
+        (setq doi (concat "http://doi.org/" doi))
+      (setq doi "(DOI not in pubmed)"))
+    doi
     )
   )
 

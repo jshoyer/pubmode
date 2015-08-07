@@ -622,6 +622,13 @@
   (pub-draw-page)
   )
 
+(defun pub-detail-briefer () ""
+  (interactive)
+  (pub-set-global-detail-level 0)
+  (setq pub-default-detail 0)
+  (pub-message "DOI view.")
+  )
+
 (defun pub-detail-brief () ""
   (interactive)
   (pub-set-global-detail-level 1)
