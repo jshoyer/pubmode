@@ -416,6 +416,14 @@
   
     (setq level (gethash "detail" data))
     
+    (if (= level 0)
+        (progn
+          (puthash "detail" 1 data)
+          (pub-draw-page)
+          (pub-message "DOI.")
+          )
+      )
+
     (if (= level 1)
         (progn
           (puthash "detail" 2 data)
@@ -434,7 +442,7 @@
         
     (if (= level 3)
         (progn 
-          (puthash "detail" 1 data)
+          (puthash "detail" 0 data)
           (pub-draw-page)
           (pub-message "Brief view.")
           )
