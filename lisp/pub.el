@@ -136,11 +136,11 @@ Lines longer than that value are broken"
   :type 'integer)
 
 
-(defvar pub-help-prompt "[ ] select [ENTER] paste+quit [123] details [b]ibtex import [c]ite [q]uit [h]elp"
+(defvar pub-help-prompt "[ ] select [ENTER] paste+quit [0123] details [b]ibtex import [c]ite [q]uit [h]elp"
   "Help prompt for minibuffer"
   )
 
-(defvar pub-help-bibtex-prompt "[ ] select [ENTER] cite+quit [123] details [b]ibtex import [c]ite [q]uit [h]elp"
+(defvar pub-help-bibtex-prompt "[ ] select [ENTER] cite+quit [0123] details [b]ibtex import [c]ite [q]uit [h]elp"
   "Help prompt for minibuffer"
   )
 
@@ -149,9 +149,10 @@ Lines longer than that value are broken"
 (defvar pub-help-screen 
 
 "
-  [Up]/[Down]    Select previous/next item in the list.
+  [Up][p]/[Down][n] Select previous/next item in the list.
 \[Left]/[Right]   Switch to previous/next page.
 
+     [0]         \`doi only view\'
      [1]         \`brief view\'
      [2]         \`summary view\' 
      [3]         \`abstract view\'
@@ -168,7 +169,7 @@ Lines longer than that value are broken"
      [w]         Copy current item/selected items to the kill-ring 
                  (\`clipboard\') for yanking (\`pasting\') into another
                  buffer.
-     [p]         New PubMed query.
+     [s]         New PubMed query.
      [r]         Search related articles for current item.
 
      [f]         Choose BibTex file.
