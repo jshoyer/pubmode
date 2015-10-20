@@ -22,7 +22,7 @@ and disclaimers for PubMed data.
 1. Requirements
 ===============
 
-Currently the mode only runs with GNU Emacs 22.x.  
+Currently the mode only runs with GNU Emacs 22.x and up.
 
 
 2. Installation
@@ -81,8 +81,9 @@ to the current item press [r].
 3.2.2. Modes of view
 --------------------
 
-There are three detail levels to view the entries:
+There are four detail levels to view the entries:
 
+ 0: Very brief view with just the DOI URI
  1: Brief view with only the first author and the reference without title.
  2: Summary with full reference and all authors. 
  3: Summary with full reference and all authors and abstract.
@@ -211,9 +212,10 @@ browse-url group.
 5. Keyboard commands
 ====================
 
-  [Up]/[Down]    Select previous/next item in the list.
+  [Up]/[Down] and [n/p]    Select previous/next item in the list.
  [Left]/[Right]   Switch to previous/next page.
 
+     [0]         `very brief DOI view'
      [1]         `brief view'
      [2]         `summary view' 
      [3]         `abstract view'
@@ -230,7 +232,7 @@ browse-url group.
      [w]         Copy current item/selected items to the kill-ring 
                  (`clipboard') for yanking (`pasting') into another
                  buffer.
-     [p]         New PubMed query.
+     [s]         New PubMed query search.
      [r]         Search related articles for current item.
 
      [f]         Choose BibTex file.
@@ -312,15 +314,16 @@ pub-double-brace
 Enclose title in BibTex entry in double braces or not. Hide Rest If
 this is option is non-nil, the title field in the BibTeX entry will be
 enclosed in an additional set of curly brackets {}. This makes BibTeX
-preserving upper and lowercase. In general you should let the style
+preserve upper and lowercase. In general you should let the style
 decide which letters to print upper or lowercase, which, however, may
 require manually insertion of braces to fix words like DNA or IGF-2.
 
 pub-default-detail
 ------------------
 
-Set your default detail level 1,2 or 3 of the PubMode selection window.
+Set your default detail level 0, 1, 2 or 3 of the PubMode selection window.
 
+   0: very brief view with only the DOI URI
    1: brief view with only the first Author and the reference without title.
    2: Summary with full reference and all authors. 
    3: Summary with abstract 
