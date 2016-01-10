@@ -67,7 +67,7 @@
 ;    (setq firstAuthor (encode-coding-string firstAuthor 'mule-utf-8))
 ;    (setq abstract (encode-coding-string abstract 'mule-utf-8))
 
-    (setq authorString (mapconcat 'pub-format-author-text authors ", "))
+    (setq authorString (concat (mapconcat 'pub-format-author-text authors ", ") "."))
 
     (setq firstInitials  (nth 1 (nth 0 authors)))
 
