@@ -150,7 +150,8 @@
           ;(insert (format "%3d. " count))
           (insert authorString)
           (insert title)
-          (insert citation)
+	  (if (= detail 3)
+	      (insert citation))
 	  (insert doiuri)
           (insert "\n")
              
