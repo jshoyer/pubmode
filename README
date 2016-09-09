@@ -69,14 +69,16 @@ web-site, the resuts will appear after a few moments. Your current
 window will be split and you will be presented a list of articles in a
 buffer called *PubMed Results*.
 
-Use the arrow keys [Up] and [Down] to scroll through the list of
-articles. By default only 15 articles are shown per site. Using the
-[right] and [left] arrow keys you can switch between pages. Note, that
-each page is downloaded separately so there can be some delay if
-switch to page the first time.
+Use the arrow keys [Up] and [Down]
+or the keys [p] and [n]
+to scroll through the list of articles.
+By default only 15 articles are shown per site.
+Using the [right] and [left] arrow keys you can switch between pages.
+Note that each page is downloaded separately
+so there can be some delay the first time you switch to a page.
 
-To perform a new PubMed search press [p]. To search related articles
-to the current item press [r].
+To perform a new PubMed search press [s].
+To search articles related to the current item press [r].
 
 3.2.2. Modes of view
 --------------------
@@ -88,8 +90,8 @@ There are four detail levels to view the entries:
  2: Summary with full reference and all authors. 
  3: Summary with full reference and all authors and abstract.
 
-You can switch between the views using [1] [2] and [3]. If you just
-want to toggle the detail-level for the current item, use [d].
+You can switch between the views using [0], [1], [2], and [3].
+If you just want to toggle the detail-level for the current item, use [d].
 
 3.2.3. Marking entries
 ----------------------
