@@ -178,7 +178,7 @@
   (let* ((doi (gethash "doi" data)))
 
     (if doi
-        (setq doi (concat "http://doi.org/" doi))
+        (setq doi (concat "https://doi.org/" doi))
       (setq doi "(DOI not in pubmed)"))
     doi
     )
