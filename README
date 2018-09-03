@@ -45,7 +45,7 @@ See file INSTALL for more detailed installation instructions.
 ========
 
 Below you find a detailed documentation of all functions. Before you
-read it, I suggest to simply give it a try and run "M-x pub-med". 
+read it, I suggest you simply give it a try and run "M-x pub-med".
 
 
 3.1. Invocation
@@ -342,13 +342,14 @@ than that value are broken. Default value is 65.
 7. Contact
 ==========
 
+Original author:
 Stefan Washietl <wash@tbi.univie.ac.at>
-
-See www.tbi.univie.ac.at/~wash/PubMode for updates and News.
 
 Feel free to contact me with comments/bug-fixes/feature-request etc.
 
-
+For this fork of the project,
+GitHub issues would work best:
+https://github.com/jshoyer/pubmode/issues
 
 
 

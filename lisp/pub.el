@@ -24,7 +24,7 @@
   "PubMode -- A PubMed interface for Emacs"
   :tag "PubMode"
   :link '(url-link :tag "Home Page" 
-                   "http://www.tbi.univie.ac.at/~wash/pubmacs")
+                   "https://github.com/wash/pubmode")
   :prefix "pub-"
   :group 'emacs
 )
