@@ -128,6 +128,14 @@
 
 
       (goto-char (point-min))
+
+      ;; 2019-05-06: strip out i tags.
+      (goto-char (point-min))
+      (while (re-search-forward "<i>\\([^<]+\\)</i>" (point-max) t)
+	(replace-match "\\1"))
+
+      (goto-char (point-min))
+
       (search-forward "<?xml")
       (backward-char 5)
       
