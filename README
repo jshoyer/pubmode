@@ -313,8 +313,8 @@ If non-nil abstracts are included as field in the BibTeX entries created.
 pub-double-brace 
 ----------------
 
-Enclose title in BibTex entry in double braces or not. Hide Rest If
-this is option is non-nil, the title field in the BibTeX entry will be
+Enclose title in BibTex entry in double braces or not.
+If this is option is non-nil, the title field in the BibTeX entry will be
 enclosed in an additional set of curly brackets {}. This makes BibTeX
 preserve upper and lowercase. In general you should let the style
 decide which letters to print upper or lowercase, which, however, may
@@ -325,10 +325,11 @@ pub-default-detail
 
 Set your default detail level 0, 1, 2 or 3 of the PubMode selection window.
 
-   0: very brief view with only the DOI URI
+   0: very brief view with only the DOI URI.
    1: brief view with only the first Author and the reference without title.
-   2: Summary with full reference and all authors. 
-   3: Summary with abstract 
+   2: summary with year and all authors
+      (journal name is omitted).
+   3: summary with abstract.
 
 By default this value is initialized to 2.
 
