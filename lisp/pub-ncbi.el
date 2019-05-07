@@ -133,6 +133,9 @@
       (goto-char (point-min))
       (while (re-search-forward "<i>\\([^<]+\\)</i>" (point-max) t)
 	(replace-match "\\1"))
+      (goto-char (point-min))
+      (while (re-search-forward "<b>\\([^<]+\\)</b>" (point-max) t)
+	(replace-match "\\1"))
 
       (goto-char (point-min))
 
