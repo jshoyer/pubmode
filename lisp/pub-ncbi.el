@@ -129,8 +129,7 @@
 
       (goto-char (point-min))
 
-      ;; 2019-05-06: strip out i tags.
-      (goto-char (point-min))
+      ;; 2019-05-06: strip out i and b tags.
       (while (re-search-forward "<i>\\([^<]+\\)</i>" (point-max) t)
 	(replace-match "\\1"))
       (goto-char (point-min))
